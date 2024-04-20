@@ -33,6 +33,7 @@ void fader_down(int speed);
 void fader_stop();
 void set_PWM_duty(int duty_cycle);
 void set_PWM_10bit(int value);
+void set_PWM_Neutral();
 Servo frcServo;
 
 void setup() {
@@ -47,6 +48,7 @@ void setup() {
   pinMode(TOGGLE_DOWN, INPUT_PULLUP);
 
   frcServo.attach(PWM_OUT, REV_MIN_PULSE_WIDTH, REV_MAX_PULSE_WIDTH);
+
 }
 
 
@@ -113,6 +115,7 @@ else if (setpoint-fader_now < -20)
 else 
 {
   fader_stop();
+  set_PWM_Neutral();
 }
 
 
