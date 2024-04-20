@@ -1,0 +1,1 @@
+Code for a FRC-friendly development dashboard.  With powered linear potentiometers (flying faders), control variable PWM signals that can be sent to brushed/brushless motor controllers and servos.  For robot builders to prototype the use of motors without needing to write code.
