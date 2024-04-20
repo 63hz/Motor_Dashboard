@@ -1,0 +1,7 @@
+State machine?
+
+States
+
+1. Safe Mode
+    a. Device is in E-stop, no outputs, no response to controls.
+    
